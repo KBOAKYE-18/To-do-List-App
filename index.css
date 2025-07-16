@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu',sans-serif;
+    
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#030312;
+    position: relative;
+}
+
+.app-container{
+   
+    width: 60%;
+    height:300px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+.heading{
+    color:orange;
+    font-size: 4rem;
+    
+}
+
+.inner-box{
+   margin-top: 3%;
+}
+
+input[type = "text"]{
+    width: 50%;
+    height: 35px;
+    border-radius:10px;
+    border:2px solid orange;
+    border-style: double;
+    outline: none;
+    transition: box-shadow 0.3s ease; 
+    text-align: center;
+    font-size:1.3rem;
+    color: #030312;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 5px 1px orange;
+}
+
+::placeholder{
+    font-size: 1.0rem;
+}
+
+.add-task{
+    width: 50px;
+    height:30px;
+    padding: 7px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid orange;
+    color:#030312;
+}
+
+.add-task:hover{
+    background-color: orange;
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px orange;
+    
+}
+
+.side-bar-container{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width:300px;
+    height:80%;
+    color: white;
+    border-color: orange;
+    border-radius:10px;
+    text-align: left;
+    padding: 15px;
+    border-style: solid;
+    box-shadow: 1px 1px 5px 2px orange;
+    overflow-y: auto;       
+    scrollbar-width: thin;   
+    max-height: 80%; 
+    scrollbar-width: thin;              
+    scrollbar-color: orange #1e1e2f;    
+    
+}
+
+.ordered-list{
+    margin-top:5px;
+}
+
+
+
+.li-items{
+    line-height: 1.4rem;
+    display: flex;
+    border-style: solid;
+    height:40px;
+    border-color:orange;
+    position:relative;
+    font-size:1.3rem;
+    font-family:"pacifico",cursive;
+    border-radius:5px;
+    margin-bottom:6px;
+    
+}
+
+.checkBtn{
+    width: 25px;
+    height: 20px;
+    position:absolute;
+    left:80%;
+    top: 20%;
+    background-color: white;
+    color:green;
+    
+    
+}
+
+.delBtn{
+    width: 25px;
+    height: 10px;
+    position:absolute;
+    height: 20px;
+    left:90%;
+    top: 20%;
+    background-color: white;
+    color: red;
+    
+}
+
+.delBtn:hover{
+    cursor: pointer;
+    background-color:red;
+    color:white;
+}
+
+.checkBtn:hover{
+    cursor:pointer;
+    background-color:green;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
